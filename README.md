@@ -1,8 +1,18 @@
-# React + Vite
+# Functionalities
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+1) Login Page
+2) Authentication (With public and private routing)
+3) Dashboard (Graph implemented)
+4) Product Management (CRUD)
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+# Technologies Used
+
+- React JS,
+- Redux,
+- Redux Toolkit
+
+
+# API
+
+- Dummy API (https://dummyjson.com/docs/auth)
