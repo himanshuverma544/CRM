@@ -15,4 +15,4 @@
 
 # API
 
-- Dummy API (https://dummyjson.com/docs/auth)
+- Dummy API: https://dummyjson.com/docs/auth
