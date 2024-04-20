@@ -18,7 +18,6 @@ const AppBrand = ({ className: linkClassName, name, logo, variant }) => {
       path={DASHBOARD.path}
       linkText={name}
       icon={logo}
-      variant={variant}
       fontSize="2rem"
       color={theme.palette.primary.link}
     />
