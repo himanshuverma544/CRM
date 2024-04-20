@@ -23,6 +23,11 @@ const SIGN_UP = {
   title: "Sign Up"
 };
 
+const SIGN_OUT = {
+  path: "/sign-out",
+  title: "Sign Out"
+};
+
 const PAGE404 = {
   path: "*",
 }
@@ -34,5 +39,6 @@ export {
   CUSTOMERS,
   SIGN_IN,
   SIGN_UP,
+  SIGN_OUT,
   PAGE404
 };
