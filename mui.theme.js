@@ -2,6 +2,15 @@ import { createTheme } from "@mui/material";
 
 const theme = createTheme({
 
+  components: {
+    MuiStack: {
+      defaultProps: {
+        direction: "row",
+        useFlexGap: true
+      }
+    }
+  },
+
   palette: {
     primary: {
       main: '#092661',
@@ -17,21 +26,25 @@ const theme = createTheme({
     tertiary: {
       text: '#8F9FBC'
     },
+    quaternary: {
+      text: "#b7c3df"
+    },
     green: '#22C55E',
     yellow: '#EAB308',
     blue: '#3B82F6',
     red: '#EF4444'
   },
 
-  breakpoints: {  // Subtracting 1px, as MUI 639px is equal to Tailwind 640px
+  breakpoints: {  // Subtracting 1px as, MUI 374px == Tailwind 375px
     values: {
-      sm: 640 - 1, 
+      xs: 375 - 1,
+      sm: 425 - 1, 
       md: 768 - 1,
       lg: 1024 - 1,
-      xl: 1280 - 1,
-      xxl: 1536 - 1
+      xl: 1440 - 1,
+      xxl: 2560 - 1
     },
-  },
+  }
 });
 
 export default theme;
