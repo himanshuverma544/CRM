@@ -1,9 +1,10 @@
 import { NavLink, useLocation } from "react-router-dom";
 
+import Stack from "@mui/material/Stack";
 import Box from "@mui/material/Box";
 
 
-const NavItem = ({ path, activeIcon, inactiveIcon, title }) => {
+const NavItem = ({ path, activeIcon, inactiveIcon, title, keepInRow=false }) => {
 
   const location = useLocation();
 
@@ -12,15 +13,17 @@ const NavItem = ({ path, activeIcon, inactiveIcon, title }) => {
   return (
     <li>
       <NavLink to={path}>
-        <Box 
-          className={`nav-items-wrapper flex flex-col items-center gap-1 pt-1 pb-0 px-3
-          md:flex-row md:gap-2 md:py-3 
+        <Stack 
+          className={`nav-items-wrapper px-3 sm:py-3
           hover:rounded hover:bg-mainSecondary hover:text-linkPrimary
           ${isActive() ? "rounded bg-mainSecondary text-linkPrimary" : "text-linkSecondary"}`}
+          direction={{xs: keepInRow ? "row" : "column", sm: "row"}}
+          alignItems="center"
+          spacing={{xs: keepInRow ? 2 : 1, sm: 2}}
         >
-          { isActive() ? activeIcon : inactiveIcon }
+          {isActive() ? activeIcon : inactiveIcon}
           <Box component="span">{title}</Box>
-        </Box>
+        </Stack>
       </NavLink>
     </li>
   );
